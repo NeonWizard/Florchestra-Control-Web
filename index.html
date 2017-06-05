@@ -8,6 +8,17 @@
 </head>
 
 <body>
+	<div id="center-box">
+		<h1>Florchestra Control</h1>
+		<div id="engine-control">
+			<button onclick="startEngine()" id="start-engine">Start</button>
+			<button onclick="stopEngine()" id="stop-engine" class="disabled" disabled>Stop</button>
+		</div>
+		<div id="song-picker">
+			<select id="song-dropdown" class="disabled" disabled></select>
+			<button id="play-song" class="disabled" disabled>Play</button>
+		</div>
+	</div>
 
 	<script src="script.js"></script>
 </body>

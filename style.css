@@ -1,4 +1,126 @@
+* {
+	outline: none;
+}
+
+html {
+	height: 100%;
+}
+
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+
 	background-color: black;
 	overflow: hidden;
+}
+
+#center-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+	width: 75%;
+	height: 75%;
+
+	border: 1px solid silver;
+	background-color: rgb(20, 20, 20);
+}
+
+h1 {
+	position: absolute;
+	top: 50px;
+
+	font-size: 2.3em;
+	color: white;
+
+	border-bottom: 1px solid silver;
+}
+
+button {
+	cursor: pointer;
+}
+
+#engine-control {
+	display: flex;
+	justify-content: center;
+
+	width: 70%;
+
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+#engine-control button:first-child {
+	margin-right: 35px;
+}
+
+#engine-control button {
+	width: 50%;
+	font-size: 2.2em;
+	color: white;
+
+	padding: 20px 15px;
+	border-radius: 10px;
+	border: none;
+}
+
+#start-engine {
+	background-color: rgb(0, 150, 0);
+}
+
+#start-engine:hover {
+	background-color: rgb(0, 120, 0);
+}
+
+#stop-engine {
+	background-color: rgb(150, 0, 0);
+}
+
+#stop-engine:hover {
+	background-color: rgb(120, 0, 0);
+}
+
+#song-picker {
+	display: flex;
+	justify-content: center;
+
+	width: 50%;
+}
+
+#song-dropdown {
+	margin-right: 20px;
+	width: 50%;
+
+	border: none;
+	border-radius: 20px;
+
+	font-size: 1.3em;
+}
+
+#play-song {
+	width: 50%;
+
+	font-size: 1.3em;
+	padding: 10px 25px;
+
+	/*border: 1px solid gray;*/
+	border: none;
+	border-radius: 10px;
+	color: black;
+	background-color: rgb(220, 220, 220);
+}
+
+#play-song:hover {
+	background-color: rgb(150, 150, 150);
+}
+
+.disabled {
+	background-color: rgb(75, 75, 75) !important;
+	color: black !important;
+	cursor: default;
 }
