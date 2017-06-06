@@ -5,7 +5,8 @@ let elements = {
 	"start": document.querySelector("#start-engine"),
 	"stop": document.querySelector("#stop-engine"),
 	"play": document.querySelector("#play-song"),
-	"dropdown": document.querySelector("#song-dropdown")
+	"dropdown": document.querySelector("#song-dropdown"),
+	"switch": document.querySelector("#bigrange-switch input")
 }
 
 function startEngine() {
@@ -17,6 +18,9 @@ function startEngine() {
 		elements[element].className = "";
 	}
 	elements["start"].disabled = true; elements["start"].className = "disabled";
+	elements["switch"].disabled = true;
+	// document.querySelector("#bigrange-switch .slider").style.backgroundColor = "rgb(20, 20, 20)";
+	document.querySelector("#bigrange-label").style.color = "gray";
 }
 
 function stopEngine() {
@@ -28,6 +32,9 @@ function stopEngine() {
 		elements[element].className = "disabled";
 	}
 	elements["start"].disabled = false; elements["start"].className = "";
+	elements["switch"].disabled = false;
+	// document.querySelector("#bigrange-switch .slider").style.backgroundColor = "#bbb";
+	document.querySelector("#bigrange-label").style.color = "white";
 }
 
 
