@@ -157,7 +157,7 @@ button {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border-radius: 8px;
+	border-radius: 12px;
 
 	background-color: #bbb;
 	-webkit-transition: .4s;
