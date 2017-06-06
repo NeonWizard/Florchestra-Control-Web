@@ -35,7 +35,8 @@ h1 {
 	position: absolute;
 	top: 50px;
 
-	font-size: 2.3em;
+	font-size: 2.75em;
+	font-family: monospace;
 	color: white;
 
 	border-bottom: 1px solid silver;
@@ -123,4 +124,70 @@ button {
 	background-color: rgb(75, 75, 75) !important;
 	color: black !important;
 	cursor: default;
+}
+
+#bigrange-picker {
+	display: flex;
+	align-items: center;
+
+	position: absolute;
+	bottom: 60px;
+}
+
+#bigrange-label {
+	color: white;
+	margin-right: 20px;
+	font-size: 1.5em;
+	font-family: monospace;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 66px;
+	height: 36px;
+}
+
+.switch input { display: none; }
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 8px;
+
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 28px;
+	width: 29px;
+	left: 4px;
+	bottom: 4px;
+	border-radius: 40%;
+
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
 }
