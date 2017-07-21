@@ -1,5 +1,5 @@
 let engineOn = false;
-let apiURL = "http://localhost:8080";
+let apiURL = "http://wizardlywonders.xyz:3055";
 
 let elements = {
 	"start": document.querySelector("#start-engine"),
